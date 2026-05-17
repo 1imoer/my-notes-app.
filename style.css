@@ -1,0 +1,141 @@
+/* تنسيق عام بسيط وواضح للمبتدئ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px 12px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+}
+
+input:focus, textarea:focus {
+  border-color: #2563eb;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  flex: 1;
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+#countBadge {
+  background: #e5e7eb;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+.notes-list {
+  display: grid;
+  gap: 10px;
+}
+
+.note-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.note-text {
+  margin: 0 0 10px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.note-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.note-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.note-actions button {
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.note-actions .delete {
+  background: #dc2626;
+}
+
+.note-actions .edit {
+  background: #f59e0b;
+  color: #111827;
+}

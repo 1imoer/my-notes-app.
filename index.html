@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2563eb" />
+  <title>ملاحظاتي اليومية</title>
+
+  <!-- ملف الأيقونة/التحويل إلى تطبيق -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- ربط ملف التنسيق -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1>ملاحظاتي اليومية</h1>
+      <p>اكتب ملاحظاتك، احفظها، وابحث عنها بسهولة.</p>
+    </header>
+
+    <section class="card">
+      <label for="searchInput">بحث</label>
+      <input id="searchInput" type="search" placeholder="ابحث عن ملاحظة..." />
+    </section>
+
+    <section class="card">
+      <label for="noteInput">ملاحظة جديدة</label>
+      <textarea id="noteInput" rows="4" placeholder="اكتب ملاحظتك هنا..."></textarea>
+
+      <div class="actions">
+        <button id="saveBtn">حفظ الملاحظة</button>
+        <button id="clearBtn" class="secondary">مسح الحقل</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="list-header">
+        <h2>الملاحظات</h2>
+        <span id="countBadge">0</span>
+      </div>
+
+      <div id="notesList" class="notes-list"></div>
+    </section>
+  </main>
+
+  <!-- ملف التحكم -->
+  <script src="app.js"></script>
+
+  <script>
+    // تسجيل Service Worker لتفعيل العمل دون إنترنت لاحقًا
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js");
+      });
+    }
+  </script>
+</body>
+</html>

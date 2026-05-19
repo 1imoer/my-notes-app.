@@ -1,0 +1,13 @@
+{
+  "name": "my-notes-apk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:android": "cordova build android",
+    "prepare": "cordova platform add android || cordova platform update android"
+  },
+  "devDependencies": {
+    "cordova": "^12.0.0",
+    "cordova-android": "^13.0.0"
+  }
+}

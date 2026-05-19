@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.mynotes" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>ملاحظاتي اليومية</name>
+  <description>نسخة أندرويد من موقع الملاحظات</description>
+  <author email="you@example.com" href="https://1imoer.github.io/my-notes-app./">1imoer</author>
+
+  <content src="https://1imoer.github.io/my-notes-app./" />
+  <access origin="*" />
+  <allow-navigation href="https://1imoer.github.io/*" />
+  <allow-intent href="https://*/*" />
+  <allow-intent href="http://*/*" />
+  <preference name="SplashScreenDelay" value="2000" />
+  <preference name="AndroidLaunchMode" value="singleTop" />
+  <preference name="DisallowOverscroll" value="true" />
+  <preference name="Fullscreen" value="false" />
+  <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+  <platform name="android">
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="www/icon-512.png" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+  </platform>
+</widget>

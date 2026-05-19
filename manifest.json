@@ -1,16 +1,18 @@
 {
-  "name": "My Notes App",
-  "short_name": "Notes",
-  "start_url": "/my-notes-app./",
-  "scope": "/my-notes-app./",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "icons": [
-    {
-      "src": "/my-notes-app./icon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
+  "background_color": "#620000",
+  "dir": "auto",
+  "display": "fullscreen",
+  "name": "more",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "morejr",
+  "start_url": "/https://1imoer.github.io/my-notes-app/",
+  "theme_color": "#ffffff",
+  "id": "https://1imoer.github.io/my-notes-app/",
+  "description": "تطبيق ملاحظاتي اليومية هو تطبيق ويب بسيط وسريع لحفظ الملاحظات وتنظيمها بسهولة من الهاتف أو الكمبيوتر. يتيح لك إنشاء الملاحظات والبحث عنها وحفظها بسرعة، مع واجهة واضحة وخفيفة تعمل مباشرة من المتصفح ويمكن تثبيتها كتطبيق.\nالوصف القصير: تطبيق ويب بسيط وسريع لكتابة وحفظ وتنظيم الملاحظات بسهولة.\nلـ manifest.json استخدم غالبًا الوصف القصير أو هذا النص المتوسط: ملاحظاتي اليومية: تطبيق ويب سريع وبسيط لحفظ وتنظيم الملاحظات ويمكن تثبيته على الهاتف.",
+  "lang": "en",
+  "categories": [
+    "business",
+    "productivity"
   ]
 }
